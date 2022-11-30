@@ -1,0 +1,117 @@
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+@font-face {
+    font-family: face;
+    src: url(./Poppins-Light.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: face;
+
+}
+body{
+    background-color: var(--Very-Light-Gray);
+    padding: 50px 150px 0px;
+}
+
+.container{
+    color: var(--Grayish-Blue);
+}
+
+.slug,.title.subtitle{
+    margin-bottom: 10px;
+    
+}
+.slug{
+    font-size: 1.7em;
+    font-weight: 200;
+    text-align: center;
+    
+}
+.title{
+    color: var(--Very-Dark-Blue);
+    font-size: 1.7em;
+    text-align: center;
+    
+}
+.subtitle{
+    text-align: center;
+    font-size: 1.2em;
+    width: 550px;
+    line-height: 30px;
+    margin: 0px auto ;
+}
+
+.box-wrapper{
+    width: 100%;
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box-column{
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box{
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    margin: 10px 0px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.2), -1px -1px 5px rgba(0, 0, 0, .2);
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 20px;
+}
+
+.box img{
+    float: right;
+    margin-top: 50px;
+}
+.box-wrapper .box-column .box h1{
+    font-size: 1.3em;
+    color: var(--Very-Dark-Blue);
+    padding-bottom: 10px;
+}
+.box-wrapper .box-column .box p{
+    font-size: 1em;
+}
+
+.box-cyan{
+    border-top: 5px solid var(--Cyan);
+}
+.box-red{
+    border-top: 5px solid var(--Red);
+}
+.box-orange{
+    border-top: 5px solid var(--Orange);
+}
+.box-blue{
+    border-top: 5px solid var(--Blue);
+}
+
+footer{
+    color: var(--Grayish-Blue);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer a{
+    color: var(--Very-Dark-Blue);
+    text-decoration: none;
+}
